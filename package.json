@@ -3,18 +3,26 @@
   "private": true,
   "devDependencies": {
     "@vonor/ui": "0.0.0",
+    "commitizen": "^4.2.4",
+    "cz-lerna-changelog": "^2.0.3",
+    "element-plus": "^1.0.2-beta.70",
     "lerna": "^4.0.0",
     "markdown-it-container": "^3.0.0",
     "vuepress": "^2.0.0-beta.26",
-    "webpack": "^5.59.1",
-    "element-plus": "^1.0.2-beta.70"
+    "webpack": "^5.59.1"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "admin": "lerna run --scope @vonor/admin serve"
+    "admin": "lerna run --scope @vonor/admin serve",
+    "commit": "cz"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  }
 }
