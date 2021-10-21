@@ -1,0 +1,32 @@
+{
+  "name": "@vonor/cli",
+  "version": "0.0.0",
+  "description": "is a cli to help vonor",
+  "keywords": [
+    "ui"
+  ],
+  "author": "louis <louis61619@gmail.com>",
+  "homepage": "https://github.com/louis61619/vonor",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "plop": "^2.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louis61619/vonor.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/louis61619/vonor/issues"
+  }
+}

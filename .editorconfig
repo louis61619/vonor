@@ -1,0 +1,16 @@
+# http://editorconfig.org
+# 在vs code中需要安裝插件
+
+root = true
+
+[*] # 表示所有文件適用
+charset = utf-8 # 設置文件字符集 utf-8
+indent_style = space # 縮進風格（tab | space）
+indent_size = 2 # 縮進大小
+end_of_line = lf # 換行類型(lf | cr | crlf)
+trim_trailing_whitespace = true # 去除行首任意空白字符
+insert_final_newline = true # 始終在文件末尾插入新行
+
+[*.md] # 表示僅md文件適用以下規則
+max_line_length = off
+trim_trailing_whitespace = false

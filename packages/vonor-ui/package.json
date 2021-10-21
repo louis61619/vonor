@@ -1,0 +1,19 @@
+{
+  "name": "@vonor/ui",
+  "version": "0.0.0",
+  "description": "component library based on element-plus",
+  "author": "louis <louis61619@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "element-plus": "*",
+    "vue": ">=3"
+  }
+}

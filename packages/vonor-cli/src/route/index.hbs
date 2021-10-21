@@ -1,0 +1,9 @@
+{{#if route}}
+const dashboard = () => import('@/views/{{ path }}/{{ name }}.vue')
+export default {
+  path: '/{{ path }}',
+  name: 'dashboard',
+  component: dashboard,
+  children: []
+}
+{{/if}}

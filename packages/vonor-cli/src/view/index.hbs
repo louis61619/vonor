@@ -1,0 +1,20 @@
+{{#if template}}
+<template>
+  <div></div>
+</template>
+{{/if}}
+
+{{#if script}}
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: '{{ properCase name }}',
+  setup() {
+    return {}
+  }
+})
+</script>
+{{/if}}
+
+{{#if style}}<style scoped></style>{{/if}}

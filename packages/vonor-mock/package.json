@@ -1,0 +1,22 @@
+{
+  "name": "@vonor/mock",
+  "version": "0.0.0",
+  "description": "component library based on element-plus",
+  "author": "louis <louis61619@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "mockjs": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
