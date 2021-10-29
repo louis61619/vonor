@@ -9,7 +9,8 @@
   "scripts": {
     "commit": "cz",
     "serve": "lerna run serve --scope=@vonor/admin",
-    "docs:dev": "lerna run docs:dev --scope=@vonor/docs"
+    "docs:dev": "lerna run docs:dev --scope=@vonor/docs",
+    "docs": "yarn workspace @vonor/docs docs:dev"
   },
   "workspaces": [
     "packages/*",
