@@ -10,3 +10,6 @@ es
 .cache
 .vscode
 docs/.vuepress/dist
+
+
+lerna-debug.log

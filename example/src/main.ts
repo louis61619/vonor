@@ -9,6 +9,9 @@ import { setupStore } from '@/store'
 import './assets/css/index.less'
 import 'normalize.css'
 
+// 全局引入
+// import ElementPlus from 'element-plus'
+// import 'element-plus/lib/theme-chalk/index.css'
 const { mockXHR } = require('@vonor/mock')
 mockXHR()
 

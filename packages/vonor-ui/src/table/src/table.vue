@@ -116,7 +116,7 @@ export default defineComponent({
 })
 </script>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 .header {
   display: flex;
   height: 45px;

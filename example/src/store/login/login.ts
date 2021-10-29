@@ -37,7 +37,7 @@ const loginModule: Module<ILoginState, IRootStore> = {
 
       // 對路由進行加載
       const routes = mapMenuRoutes(payload)
-      routes.forEach(route => {
+      routes.forEach((route) => {
         router.addRoute('main', route)
       })
 
@@ -70,12 +70,9 @@ const loginModule: Module<ILoginState, IRootStore> = {
     },
     loadLocalStore({ commit }) {
       const userInfo = localCache.getCache('userInfo')
-
       if (userInfo) commit(MutaionTypes.CHANGE_USER_INFO, userInfo)
 
       const token = localCache.getCache('token')
-      console.log('----')
-
       if (token) {
         commit(MutaionTypes.CHANGE_TOKEN, token)
       }

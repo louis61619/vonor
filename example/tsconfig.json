@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    // 目標代碼 => exnext 代表是es6以後的程式碼 因為最終會透過babel做轉化
+    "target": "esnext",
+    // 目標代碼需要使用的模塊化方案 是使用es6 也因為最終會透過webpack做轉化
+    "module": "esnext",
+    // 嚴格檢查
+    "strict": true,
+    // 對jsx做處理 是不需要的 因為最終會透過babel做轉化
+    "jsx": "preserve",
+    // 輔助導入
+    "importHelpers": true,
+    // 按照node的方式去解析模塊
+    "moduleResolution": "node",
+    // 跳過對一些庫的類型檢測
+    "skipLibCheck": true,
+    // es module和 common js 能不能混和使用
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    // 生成映射文件
+    "sourceMap": true,
+    // 文件路徑在解析時機本的url
+    "baseUrl": ".",
+    // 指定具體要解析的類型
+    "types": ["webpack-env"],
+    // 路徑解析
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    // 指定在項目中可以使用哪些庫的類型
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
