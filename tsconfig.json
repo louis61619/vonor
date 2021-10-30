@@ -35,7 +35,8 @@
     "packages/**/*.vue",
     "example/src/**/*.ts",
     "example/src/**/*.tsx",
-    "example/src/**/*.vue"
+    "example/src/**/*.vue",
+    "docs/.vuepress/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

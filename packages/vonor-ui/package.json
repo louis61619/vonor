@@ -12,6 +12,9 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
+  "dependencies": {
+    "vue": "^3.2.20"
+  },
   "peerDependencies": {
     "element-plus": "*",
     "vue": ">=3"

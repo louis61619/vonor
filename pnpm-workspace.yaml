@@ -1,0 +1,9 @@
+packages:
+  - 'packages/*'
+  - 'packages/vonor-cli/*'
+  - 'packages/vonor-eslint-config/*'
+  - 'packages/vonor-mock/*'
+  - 'packages/vonor-ui/*'
+  - docs
+  - example
+  - '!**/__tests__/**'

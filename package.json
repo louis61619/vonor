@@ -1,5 +1,6 @@
 {
   "name": "root",
+  "packageManager": "pnpm",
   "private": true,
   "devDependencies": {
     "commitizen": "^4.2.4",
@@ -8,9 +9,9 @@
   },
   "scripts": {
     "commit": "cz",
-    "serve": "lerna run serve --scope=@vonor/admin",
-    "docs:dev": "lerna run docs:dev --scope=@vonor/docs",
-    "docs": "yarn workspace @vonor/docs docs:dev"
+    "docs": "npm run docs:dev --workspace docs",
+    "serve": "npm workspace @vonor/admin serve",
+    "docs:dev": "pnpm run -C docs dev"
   },
   "workspaces": [
     "packages/*",

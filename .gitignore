@@ -13,3 +13,4 @@ docs/.vuepress/dist
 
 
 lerna-debug.log
+yarn-error.log

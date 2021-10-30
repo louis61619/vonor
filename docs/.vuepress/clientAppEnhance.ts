@@ -5,12 +5,12 @@ import ElementPlus from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
 import Demo from '../global/demo.vue'
 
-const compsMap = []
+const compsMap: { [keys: string]: string } = {}
 
 require
   .context('../examples', true, /.vue$/)
   .keys()
-  .forEach(path => {
+  .forEach((path) => {
     const currentKey = path.replace(/^\.\//, '').replace(/.vue$/, '')
     compsMap[currentKey] = require('../examples/' + currentKey).default
   })
