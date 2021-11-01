@@ -1,6 +1,9 @@
 {
   "name": "root",
   "packageManager": "pnpm",
+  "engines": {
+    "node": ">= 16"
+  },
   "private": true,
   "devDependencies": {
     "commitizen": "^4.2.4",
@@ -9,8 +12,7 @@
   },
   "scripts": {
     "commit": "cz",
-    "docs": "npm run docs:dev --workspace docs",
-    "serve": "npm workspace @vonor/admin serve",
+    "admin:dev": "pnpm run -C docs dev",
     "docs:dev": "pnpm run -C docs dev"
   },
   "workspaces": [

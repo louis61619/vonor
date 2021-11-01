@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
-import { Form } from '@vonor/ui'
+import Form from '@vonor/ui/form'
 // import moduleName from '@vonor/ui/'
 
 export default defineComponent({

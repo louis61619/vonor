@@ -7,6 +7,9 @@ export default {
   bundler: '@vuepress/webpack',
   clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
   base: process.env.NODE_ENV === 'production' ? '/elp-schema-form/' : '/',
+  alias: {
+    '@vonor/ui': path.resolve(__dirname, '../../packages/vonor-ui/src')
+  },
   plugins: [[demoBlockPlugin]],
   markdown: {
     code: {
