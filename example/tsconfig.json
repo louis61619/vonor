@@ -1,4 +1,5 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     // 目標代碼 => exnext 代表是es6以後的程式碼 因為最終會透過babel做轉化
     "target": "esnext",
@@ -25,11 +26,10 @@
     "types": ["webpack-env"],
     // 路徑解析
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@vonor/ui/*": ["../packages/vonor-ui/src/*"]
     },
     // 指定在項目中可以使用哪些庫的類型
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
-  },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
-  "exclude": ["node_modules"]
+  }
 }

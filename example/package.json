@@ -15,12 +15,13 @@
     "echarts": "^5.1.2",
     "element-plus": "^1.0.2-beta.70",
     "i18next": "^20.4.0",
-    "mockjs": "^1.1.0",
     "normalize.css": "^8.0.1",
     "vue": "^3.2.6",
     "vue-router": "^4.0.10",
     "vuex": "^4.0.2",
-    "wangeditor": "^4.7.7"
+    "wangeditor": "^4.7.7",
+    "@vonor/ui": "0.0.0",
+    "@vonor/mock": "0.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

@@ -1,9 +1,6 @@
 {
   "name": "root",
   "packageManager": "pnpm",
-  "engines": {
-    "node": ">= 16"
-  },
   "private": true,
   "devDependencies": {
     "commitizen": "^4.2.4",
@@ -12,7 +9,7 @@
   },
   "scripts": {
     "commit": "cz",
-    "admin:dev": "pnpm run -C docs dev",
+    "admin:dev": "pnpm run -C example serve",
     "docs:dev": "pnpm run -C docs dev"
   },
   "workspaces": [

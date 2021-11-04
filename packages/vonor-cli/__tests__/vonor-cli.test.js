@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const vonorCli = require('..');
+const vonorCli = require('..')
 
 describe('vonor-cli', () => {
-    it('needs tests');
-});
+  it('needs tests')
+})
