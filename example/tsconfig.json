@@ -23,7 +23,7 @@
     // 文件路徑在解析時機本的url
     "baseUrl": ".",
     // 指定具體要解析的類型
-    "types": ["webpack-env"],
+    "types": ["vite/client", "node"],
     // 路徑解析
     "paths": {
       "@/*": ["src/*"],

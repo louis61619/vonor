@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { computed, defineProps, withDefaults } from 'vue'
-
+import { EChartsOption } from 'echarts'
 import BaseChart from '@/base-ui/chart'
 
 const props = withDefaults(
@@ -20,7 +20,7 @@ const props = withDefaults(
   }
 )
 
-const options = computed(() => {
+const options = computed<EChartsOption>(() => {
   return {
     title: {
       text: props.title

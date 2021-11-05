@@ -2,7 +2,7 @@
   <div class="page-modal">
     <el-dialog title="新建用戶" v-model="dialogVisible" center destroy-on-close>
       <BaseForm v-bind="modalConfig" v-model="formData">
-        <template v-for="item in otherSlotProps" :key="item.prop" #[item.slotName]="scope">
+        <template v-for="item in otherSlotProps" :key="item.field" #[item.slotName]="scope">
           <slot :name="item.slotName" :row="scope.row"></slot>
         </template>
       </BaseForm>
@@ -19,10 +19,16 @@
 
 <script lang="ts">
 import { defineComponent, ref, watch, PropType } from 'vue'
-import { IForm } from '@/base-ui/form/types'
+import { IForm, IIFormItems } from '@/base-ui/form/types'
 import BaseForm from '@/base-ui/form'
 
 import { createPageData, updatePageData } from '@/service/main/main'
+
+interface ISlotFormItem extends IIFormItems {
+  slotName: string
+}
+
+// type c = a extends b
 
 export default defineComponent({
   components: {
@@ -86,9 +92,9 @@ export default defineComponent({
       }
     }
 
-    const otherSlotProps = props.modalConfig.formItems.filter((item: any) => {
+    const otherSlotProps = props.modalConfig.formItems.filter((item) => {
       if (item.slotName) return true
-    })
+    }) as ISlotFormItem[]
 
     return {
       dialogVisible,

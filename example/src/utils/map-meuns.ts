@@ -9,9 +9,10 @@ export function mapMenuRoutes(userMenus: any[]): RouteRecordRaw[] {
   // 1. 先加載所有的route
   const allRoutes: RouteRecordRaw[] = []
   // 第二個參數為是否遞規進行查找
-  const routeFiles = require.context('../router/main', true, /\.ts/)
-  routeFiles.keys().forEach((path) => {
-    const route = require('../router/main' + path.split('.')[1])
+  // const routeFiles = require.context('../router/main', true, /\.ts/)
+  const routeFiles = import.meta.globEager('../router/main/**/*.ts')
+  Object.keys(routeFiles).forEach((path) => {
+    const route = routeFiles[path]
     allRoutes.push(route.default)
   })
 

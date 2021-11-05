@@ -20,7 +20,7 @@ const props = withDefaults(
   }
 )
 
-const options = computed(() => {
+const options = computed<echarts.EChartsOption>(() => {
   return {
     title: {
       text: '支持滑鼠滾動縮放'

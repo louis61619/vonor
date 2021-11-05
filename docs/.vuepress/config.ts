@@ -1,25 +1,24 @@
+import type { ViteBundlerOptions } from 'vuepress-vite'
+import { defineUserConfig } from 'vuepress-vite'
+import type { DefaultThemeOptions } from 'vuepress-vite'
 import { path } from '@vuepress/utils'
 import { demoBlockPlugin } from '../plugin'
 
-export default {
-  title: 'elp-schema-form',
-  description: 'Vue3 + ElementPlus 組件庫',
-  bundler: '@vuepress/webpack',
-  clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
-  base: process.env.NODE_ENV === 'production' ? '/elp-schema-form/' : '/',
+export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
+  // 在使用 vuepress-vite 包的时候，你可以忽略这个字段，因为 Vite 是默认打包工具
+  bundler: '@vuepress/bundler-vite',
+  port: 3002,
   alias: {
     '@vonor/ui': path.resolve(__dirname, '../../packages/vonor-ui/src')
   },
-  plugins: [[demoBlockPlugin]],
-  markdown: {
-    code: {
-      lineNumbers: false
-    }
-    // config: (md) => mdPlugin(md)
+  plugins: [[demoBlockPlugin as any]],
+  // Vite 打包工具的配置项
+  bundlerConfig: {
+    // 查看下方
   },
   themeConfig: {
     // logo: '/logo.png',
-    repo: 'https://github.com/louis61619/elp-schema-form',
+    repo: 'https://github.com/louis61619/vonor-admin',
     darkMode: false,
     // editLink: false,
 
@@ -47,4 +46,4 @@ export default {
       ]
     }
   }
-}
+})

@@ -66,7 +66,7 @@ export default defineComponent({
       type: Number
     },
     propsList: {
-      type: Array,
+      type: Array as any,
       required: true
     },
     showIndexColumn: Boolean,
@@ -116,7 +116,7 @@ export default defineComponent({
 })
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 .header {
   display: flex;
   height: 45px;

@@ -170,7 +170,7 @@ const list = [
     updateAt: '2021-04-30T13:42:54.000Z'
   }
 ]
-module.exports = [
+export default [
   {
     url: '/goods/list',
     type: 'post',

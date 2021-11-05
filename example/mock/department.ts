@@ -41,7 +41,7 @@ const list = [
   }
 ]
 
-module.exports = [
+export default [
   {
     url: '/department/list',
     type: 'post',

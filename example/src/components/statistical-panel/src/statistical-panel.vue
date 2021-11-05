@@ -67,7 +67,7 @@ export default defineComponent({
   background: white;
   flex-direction: column;
   justify-content: flex-start;
-  box-shadow: 0 2px 12px 0 rgb(0 0 0, 0.1);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 
   height: 130px;
   margin-bottom: 20px;

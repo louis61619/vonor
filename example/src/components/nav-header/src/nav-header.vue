@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Breadcrumb from '@vonor/ui/breadcrumb'
+import Breadcrumb from '@/base-ui/breadcrumb'
 import UserInfo from './user-info.vue'
 
 export default defineComponent({

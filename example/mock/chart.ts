@@ -159,7 +159,7 @@ const goodsAddressSale = [
   { address: '澎湖縣', count: 60777 }
 ]
 
-module.exports = [
+export default [
   {
     url: '/goods/amount/list',
     type: 'get',

@@ -66,7 +66,7 @@ export default defineComponent({
       type: Number
     },
     propsList: {
-      type: Array,
+      type: Array as any,
       required: true
     },
     showIndexColumn: Boolean,

@@ -1,4 +1,5 @@
-const { list: menu } = require('./routes.js')
+// const { list: menu } = require('./routes.js')
+import { list as menu } from './routes'
 
 // 路由菜單
 const list = [
@@ -541,7 +542,7 @@ const list = [
   }
 ]
 
-module.exports = [
+export default [
   {
     url: '/role/1/menu',
     type: 'get',

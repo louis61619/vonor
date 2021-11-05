@@ -6,6 +6,7 @@
 
 <script setup lang="ts">
 import { computed, defineProps, withDefaults } from 'vue'
+import { EChartsOption } from 'echarts'
 import BaseChart from '@/base-ui/chart'
 
 import { convertData } from '../utils/convert-data'
@@ -21,7 +22,7 @@ const props = withDefaults(
   }
 )
 
-const options = computed(() => {
+const options = computed<EChartsOption>(() => {
   return {
     backgroundColor: '#fff',
     title: {

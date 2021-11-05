@@ -42,7 +42,7 @@ const list = [
     updateAt: '2021-04-19T07:55:28.000Z'
   }
 ]
-module.exports = [
+export default [
   {
     url: '/category/list',
     type: 'post',

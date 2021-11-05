@@ -1,37 +1,41 @@
 {
-  "name": "@vonor/admin",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vite-project",
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "prettier": "prettier --write .",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --max-warnings 0",
+    "commit": "cz"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "canvas": "^2.8.0",
     "core-js": "^3.6.5",
     "countup.js": "^2.0.8",
     "dayjs": "^1.10.6",
     "echarts": "^5.1.2",
     "element-plus": "^1.0.2-beta.70",
     "i18next": "^20.4.0",
+    "mitt": "^3.0.0",
     "normalize.css": "^8.0.1",
-    "vue": "^3.2.6",
+    "vue": "^3.2.16",
     "vue-router": "^4.0.10",
     "vuex": "^4.0.2",
     "wangeditor": "^4.7.7",
-    "@vonor/ui": "0.0.0",
     "@vonor/mock": "0.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.2.6",
-    "babel-plugin-import": "^1.13.3",
-    "less": "^3.0.4",
-    "less-loader": "^5.0.0",
-    "typescript": "~4.1.5"
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "less": "^4.1.2",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vue-tsc": "^0.3.0"
   }
 }

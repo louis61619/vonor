@@ -104,7 +104,7 @@ const list = [
   }
 ]
 
-module.exports = [
+export default [
   // user list
   {
     url: '/users/list',

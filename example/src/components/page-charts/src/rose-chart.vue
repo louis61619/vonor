@@ -6,14 +6,15 @@
 
 <script setup lang="ts">
 import { computed, defineProps } from 'vue'
+import { EChartsOption } from 'echarts'
 import BaseChart from '@/base-ui/chart'
 import { IDataType } from '../types/type'
 
 const props = defineProps<{
-  roseData: IDataType
+  roseData: IDataType[]
 }>()
 
-const options = computed(() => {
+const options = computed<EChartsOption>(() => {
   return {
     // legend: {
     //   top: 'bottom'

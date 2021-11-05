@@ -51,7 +51,7 @@ export default defineComponent({
   props: {
     collapse: Boolean,
     defaultValue: String,
-    userMenus: Array
+    userMenus: Array as any
   },
   setup() {
     const router = useRouter()

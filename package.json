@@ -9,7 +9,7 @@
   },
   "scripts": {
     "commit": "cz",
-    "admin:dev": "pnpm run -C example serve",
+    "admin:dev": "pnpm run -C example dev",
     "docs:dev": "pnpm run -C docs dev"
   },
   "workspaces": [

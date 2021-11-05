@@ -486,6 +486,4 @@ const list = [
   // }
 ]
 
-module.exports = {
-  list
-}
+export { list }
