@@ -9,7 +9,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   bundler: '@vuepress/bundler-vite',
   port: 3002,
   alias: {
-    '@vonor/ui': path.resolve(__dirname, '../../packages/vonor-ui/src')
+    '@vonor/pro-component': path.resolve(__dirname, '../../packages/vonor-pro-component/src')
   },
   plugins: [[demoBlockPlugin as any]],
   // Vite 打包工具的配置项

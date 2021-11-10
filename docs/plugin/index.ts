@@ -42,6 +42,8 @@ export const mdPlugin = (md: MarkdownIt) => {
 
         const code = md.options.highlight && md.options.highlight(source, 'vue', '')
 
+        // console.log(source.trim().match(/^import/))
+
         // const { html, js, css, cssPreProcessor, jsPreProcessor } = generateCodePenSnippet(source)
         return `<Demo source="${encodeURIComponent(
           code || ''

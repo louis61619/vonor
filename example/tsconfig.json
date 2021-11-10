@@ -27,7 +27,7 @@
     // 路徑解析
     "paths": {
       "@/*": ["src/*"],
-      "@vonor/ui/*": ["../packages/vonor-ui/src/*"]
+      "@vonor/pro-component/*": ["../packages/vonor-pro-component/src/*"]
     },
     // 指定在項目中可以使用哪些庫的類型
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
