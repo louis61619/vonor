@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Table } from '@vonor/ui'
+import Table from '@vonor/pro-component/table'
 
 export default defineComponent({
   components: {

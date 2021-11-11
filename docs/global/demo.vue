@@ -14,8 +14,8 @@
             <!-- <code>
               <div v-html="decoded"></div>
             </code> -->
-              <code v-html="'<div></div>' + decoded"></code>
-            </pre>
+            <code v-html="'<div></div>' + decoded"></code>
+          </pre>
         </div>
         <!-- </div> -->
       </div>
@@ -254,7 +254,7 @@ export default defineComponent({
   max-height: 0;
 }
 
-.demo-block::v-deep table {
+.demo-block :deep(table) {
   margin: 0;
 }
 </style>
