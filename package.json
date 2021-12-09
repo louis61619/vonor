@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "packageManager": "pnpm",
+  "packageManager": "pnpm@6.23.6",
   "private": true,
   "devDependencies": {
     "commitizen": "^4.2.4",
