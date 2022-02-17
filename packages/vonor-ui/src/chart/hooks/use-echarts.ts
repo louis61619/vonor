@@ -1,4 +1,4 @@
-import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import * as echarts from 'echarts'
 // import emitter from '@/utils/event-bus'
 
@@ -12,7 +12,7 @@ export default function useEcharts(options: echarts.EChartsOption) {
   let echartInstance: echarts.ECharts | undefined
 
   const setOptions = (options: echarts.EChartsOption) => {
-    echartInstance?.setOption(options)
+    echartInstance?.setOption(options as any)
   }
 
   const updateSize = () => {
@@ -22,7 +22,7 @@ export default function useEcharts(options: echarts.EChartsOption) {
   onMounted(() => {
     if (echartRef.value) {
       echartInstance = echarts.init(echartRef.value)
-      echartInstance.setOption(options)
+      echartInstance.setOption(options as any)
       window.addEventListener('resize', updateSize)
     }
   })

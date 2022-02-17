@@ -1,15 +1,14 @@
 <template>
-  <Table v-bind="contentConfig" :list="datalist" :list-count="datalist.length"></Table>
-  <!-- <div>jfiejfei</div> -->
+  <BaseTable v-bind="contentConfig" :list="datalist" :list-count="datalist.length"></BaseTable>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Table } from '@vonor/ui'
+import { BaseTable } from '@vonor/ui'
 
 export default defineComponent({
   components: {
-    Table
+    BaseTable
   },
   setup() {
     const datalist = [

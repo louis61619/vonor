@@ -1,15 +1,14 @@
 <template>
-  <Form v-model="modelValue" v-bind="formConfig"></Form>
+  <BaseForm v-model="modelValue" v-bind="formConfig"></BaseForm>
 </template>
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
-import { Form, IForm } from '@vonor/ui'
-// import moduleName from '@vonor/ui/'
+import { BaseForm, IForm } from '@vonor/ui'
 
 export default defineComponent({
   components: {
-    Form
+    BaseForm
   },
   setup() {
     const modelValue = ref({})

@@ -27,35 +27,35 @@ export default defineComponent({
 })
 </script>
 
-<style scoped lang="less">
+<style scoped>
 .text-link {
   padding: 0 15px;
   margin-bottom: 40px;
   text-align: left;
+}
 
-  .title {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-  }
+.title {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
 
-  .primary {
-    color: var(--el-color-primary);
-  }
+.primary {
+  color: var(--el-color-primary);
+}
 
-  .item {
-    margin: 5px;
-  }
+.item {
+  margin: 5px;
+}
 
-  .title::before {
-    position: absolute;
-    top: 40%;
-    left: -15px;
-    width: 5px;
-    height: 5px;
-    background: black;
-    border-radius: 100%;
-    content: '';
-  }
+.title::before {
+  position: absolute;
+  top: 40%;
+  left: -15px;
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 100%;
+  content: '';
 }
 </style>
