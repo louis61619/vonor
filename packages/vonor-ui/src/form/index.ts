@@ -1,5 +1,5 @@
 import form from './src/form.vue'
 
-export * from './types'
+export type { IForm, IIFormItems } from './types'
 
 export default form

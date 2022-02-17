@@ -42,7 +42,7 @@
                 </el-select>
               </template>
               <!-- radio組件 -->
-              <template v-else-if="item.type === 'radio'">
+              <!-- <template v-else-if="item.type === 'radio'">
                 <el-radio-group
                   :model-value="modelValue[`${item.field}`]"
                   @update:modelValue="handleValueChange($event, item.field)"
@@ -58,7 +58,7 @@
                     <slot :name="item.slotName" :row="item"></slot>
                   </el-radio>
                 </el-radio-group>
-              </template>
+              </template> -->
               <!-- date picker組件 -->
               <template v-else-if="item.type === 'datepicker'">
                 <el-date-picker

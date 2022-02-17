@@ -5,7 +5,9 @@
   "devDependencies": {
     "commitizen": "^4.2.4",
     "cz-lerna-changelog": "^2.0.3",
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "@vonor/eslint-config": "workspace:*",
+    "eslint": "^7.30.0"
   },
   "scripts": {
     "commit": "cz",

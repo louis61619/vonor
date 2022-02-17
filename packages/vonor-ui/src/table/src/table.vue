@@ -116,29 +116,26 @@ export default defineComponent({
 })
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .header {
   display: flex;
   height: 45px;
   padding: 0 5px;
   justify-content: space-between;
   align-items: center;
-
-  .title {
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  .handler {
-    align-items: center;
-  }
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
 }
 
+.handler {
+  align-items: center;
+}
 .footer {
   margin-top: 15px;
-
-  .el-pagination {
-    text-align: right;
-  }
+}
+.el-pagination {
+  text-align: right;
 }
 </style>

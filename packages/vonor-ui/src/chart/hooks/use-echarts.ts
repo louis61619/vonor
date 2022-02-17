@@ -1,6 +1,6 @@
 import { onMounted, onBeforeUnmount, ref } from 'vue'
 import * as echarts from 'echarts'
-import emitter from '@/utils/event-bus'
+// import emitter from '@/utils/event-bus'
 
 import chinaMapData from '../data/china.json'
 import taiwanMapData from '../data/taiwan.json'
@@ -27,17 +27,17 @@ export default function useEcharts(options: echarts.EChartsOption) {
     }
   })
 
-  onBeforeUnmount(() => {
-    window.removeEventListener('resize', updateSize)
-  })
+  // onBeforeUnmount(() => {
+  //   window.removeEventListener('resize', updateSize)
+  // })
 
-  onMounted(() => {
-    emitter.on('handleFoldChange', updateSize)
-  })
+  // onMounted(() => {
+  //   emitter.on('handleFoldChange', updateSize)
+  // })
 
-  onBeforeUnmount(() => {
-    emitter.off('handleFoldChange', updateSize)
-  })
+  // onBeforeUnmount(() => {
+  //   emitter.off('handleFoldChange', updateSize)
+  // })
 
   return {
     echartRef,

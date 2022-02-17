@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
-import Form from '@vonor/ui/form'
+import { Form, IForm } from '@vonor/ui'
 // import moduleName from '@vonor/ui/'
 
 export default defineComponent({
@@ -14,7 +14,7 @@ export default defineComponent({
   setup() {
     const modelValue = ref({})
 
-    const formConfig = {
+    const formConfig: IForm = {
       colLayout: {
         span: 24
       },
