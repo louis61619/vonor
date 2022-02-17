@@ -6,7 +6,7 @@
       @click="handleFoldClick"
     ></i>
     <div class="content">
-      <Breadcrumb :breadcrumbs="breadcrumbs" />
+      <BaseBreadcrumb :breadcrumbs="breadcrumbs" />
       <div>
         <UserInfo />
       </div>
@@ -16,13 +16,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Breadcrumb from '@vonor/ui/breadcrumb'
+import { BaseBreadcrumb } from '@vonor/ui'
 import UserInfo from './user-info.vue'
 
 export default defineComponent({
   components: {
     UserInfo,
-    Breadcrumb
+    BaseBreadcrumb
   },
   props: {
     collapse: Boolean,

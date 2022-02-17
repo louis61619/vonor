@@ -26,8 +26,8 @@
     "types": ["webpack-env"],
     // 路徑解析
     "paths": {
-      "@/*": ["src/*"],
-      "@vonor/ui/*": ["../packages/vonor-ui/src/*"]
+      "@/*": ["src/*"]
+      // "@vonor/ui/*": ["../packages/vonor-ui/src/*"]
     },
     // 指定在項目中可以使用哪些庫的類型
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]

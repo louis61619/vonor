@@ -19,8 +19,7 @@
 
 <script lang="ts">
 import { defineComponent, ref, watch, PropType } from 'vue'
-import { IForm } from '@/base-ui/form/types'
-import BaseForm from '@/base-ui/form'
+import { BaseForm, IForm } from '@vonor/ui'
 
 import { createPageData, updatePageData } from '@/service/main/main'
 

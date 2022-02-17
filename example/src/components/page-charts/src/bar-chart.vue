@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { computed, defineProps, withDefaults } from 'vue'
 import * as echarts from 'echarts'
-import BaseChart from '@/base-ui/chart'
+import { BaseChart } from '@vonor/ui'
 
 const props = withDefaults(
   defineProps<{

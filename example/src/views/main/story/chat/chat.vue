@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import BaseEditor from '@/base-ui/editor'
+import { BaseEditor } from '@vonor/ui'
 
 export default defineComponent({
   name: 'chat',

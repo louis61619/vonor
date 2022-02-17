@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import BaseCounterUp from '@/base-ui/count-up'
+import { BaseCounterUp } from '@vonor/ui'
 
 export default defineComponent({
   components: {

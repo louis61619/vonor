@@ -1,4 +1,4 @@
-import { IForm } from '@/base-ui/form'
+import { IForm } from '@vonor/ui'
 
 export const formConfig: IForm = {
   formItems: [

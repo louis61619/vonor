@@ -51,10 +51,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import BaseDescriptions from '@/base-ui/descriptions'
-import BaseTextLink from '@/base-ui/text-link'
+import { BaseDescriptions } from '@vonor/ui'
+import { BaseTextLink } from '@vonor/ui'
 // import HyCode from '@/base-ui/code'
-import BaseCard from '@/base-ui/card'
+import { BaseCard } from '@vonor/ui'
 import { technologyStacks } from './config'
 
 export default defineComponent({

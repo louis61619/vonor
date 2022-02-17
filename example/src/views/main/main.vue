@@ -31,7 +31,7 @@ import { pathMapToMenu } from '@/utils/map-meuns'
 import emmiter from '@/utils/event-bus'
 import { ElMain } from 'element-plus'
 
-import { IBreadcrumb } from '@/base-ui/breadcrumb/types'
+import { IBreadcrumb } from '@vonor/ui'
 
 import NavMenu from '@/components/nav-menu'
 import NavHeader from '@/components/nav-header'

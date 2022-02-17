@@ -53,7 +53,7 @@ import {
 } from '@/service/data/data'
 import { IDataType } from '@/components/page-charts/types/type'
 
-import BaseCard from '@/base-ui/card'
+import { BaseCard } from '@vonor/ui'
 import { PieChart, RoseChart, LineChart, BarChart, MapChart } from '@/components/page-charts'
 import StatisticalPanel from '@/components/statistical-panel'
 

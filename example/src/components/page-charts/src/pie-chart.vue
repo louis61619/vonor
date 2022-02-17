@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { defineProps, computed } from 'vue'
-import BaseChart from '@/base-ui/chart'
+import { BaseChart } from '@vonor/ui'
 import { IDataType } from '../types/type'
 
 const props = defineProps<{

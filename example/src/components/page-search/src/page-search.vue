@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import BaseForm from '@/base-ui/form'
+import { BaseForm } from '@vonor/ui'
 
 export default defineComponent({
   components: {
