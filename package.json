@@ -12,7 +12,8 @@
   "scripts": {
     "commit": "cz",
     "admin:dev": "pnpm run -C example serve",
-    "docs:dev": "pnpm run -C docs dev"
+    "docs:dev": "pnpm run -C docs dev",
+    "dev": ""
   },
   "workspaces": [
     "packages/*",
