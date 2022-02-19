@@ -42,10 +42,11 @@ export const mdPlugin = (md: MarkdownIt) => {
 
         const code = md.options.highlight && md.options.highlight(source, 'vue', '')
 
+        const current = sourceFile.replace('/', '-').replace('.vue', '')
         // const { html, js, css, cssPreProcessor, jsPreProcessor } = generateCodePenSnippet(source)
         return `<Demo source="${encodeURIComponent(
           code || ''
-        )}" path="${sourceFile}" description="${description}">`
+        )}" path="${sourceFile}" description="${description}" current="${current}">`
         //   <template #highlight>
         //   <div v-pre class="language-vue">
         //     ${code}

@@ -6,8 +6,8 @@
     "build": "vuepress build ."
   },
   "dependencies": {
-    "@vonor/ui": "0.0.0",
     "@element-plus/icons": "^0.0.11",
+    "@vonor/ui": "0.0.0",
     "element-plus": "^1.0.2-beta.70"
   },
   "devDependencies": {
@@ -48,6 +48,7 @@
     "postcss-loader": "^6.2.0",
     "sass": "^1.43.4",
     "sass-loader": "^12.2.0",
+    "serve": "^13.0.2",
     "style-loader": "^3.3.1",
     "vue": "^3.2.20",
     "vue-loader": "^16.8.2",

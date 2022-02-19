@@ -2,24 +2,8 @@
   <div class="demo-block" @mouseenter="hover = true" @mouseleave="hover = false">
     <!-- example -->
     <div class="example-case">
-      <component :is="current"></component>
+      <component :is="'current'"></component>
     </div>
-
-    <!-- code -->
-    <transition name="zoom">
-      <div v-if="isExpanded" ref="meta" class="meta">
-        <!-- <div> -->
-        <div class="language-vue ext-vue">
-          <pre code="language-vue">
-            <!-- <code>
-              <div v-html="decoded"></div>
-            </code> -->
-              <code v-html="'<div></div>' + decoded"></code>
-            </pre>
-        </div>
-        <!-- </div> -->
-      </div>
-    </transition>
 
     <!-- control -->
     <div
@@ -48,12 +32,23 @@
       </div>
     </div>
 
+    <!-- code -->
+    <transition name="zoom">
+      <div v-if="isExpanded" ref="meta" class="meta">
+        <div class="language-vue ext-vue">
+          <pre code="language-vue">
+            <code v-html="'<div></div>' + decoded"></code>
+          </pre>
+        </div>
+      </div>
+    </transition>
+
     <!-- <div>{{ description }}</div> -->
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, getCurrentInstance, ref } from 'vue'
+import { defineComponent, computed, ref } from 'vue'
 import { CaretBottom, CaretTop } from '@element-plus/icons'
 
 export default defineComponent({
@@ -85,11 +80,13 @@ export default defineComponent({
     description: {
       type: String,
       default: ''
+    },
+    current: {
+      type: String,
+      default: ''
     }
   },
   setup(props) {
-    const app = getCurrentInstance()
-
     const hover = ref(false)
     const fixedControl = ref(false)
     const isExpanded = ref(false)
@@ -107,16 +104,22 @@ export default defineComponent({
     const meta = ref(null)
     const control = ref(null)
 
+    const onCopy = () => {
+      const code = decodeURIComponent(props.sourceCode)
+      // clipboardCopy(code)
+    }
+
     return {
       decoded,
-      current: app && app.appContext.config.globalProperties.$compsMap[props.path],
+      // current: app && app.appContext.config.globalProperties.$compsMap[props.path],
       hover,
       fixedControl,
       isExpanded,
       controlText,
       descriptions,
       meta,
-      control
+      control,
+      onCopy
     }
   }
 })
