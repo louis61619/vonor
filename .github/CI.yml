@@ -36,7 +36,7 @@ jobs:
           pnpm admin:build
       - name: copy example to docs dist
         run: |
-          cp ./example/dist ./.vuepress/dist/example
+          mv ./example/dist ./docs/.vuepress/dist/example
       - name: Commit files
         run: |
           cd $PUBLISH_DIR

@@ -2,7 +2,7 @@
   <div class="demo-block" @mouseenter="hover = true" @mouseleave="hover = false">
     <!-- example -->
     <div class="example-case">
-      <component :is="'current'"></component>
+      <component :is="current"></component>
     </div>
 
     <!-- control -->

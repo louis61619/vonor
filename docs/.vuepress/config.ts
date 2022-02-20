@@ -2,11 +2,11 @@ import { path } from '@vuepress/utils'
 import { demoBlockPlugin } from '../plugin'
 
 export default {
-  title: 'vonor',
-  description: 'Vue3 + ElementPlus 組件庫',
+  title: 'Vonor',
+  description: `基於 Vue3 和 Element-plus 的後台構建方案`,
   bundler: '@vuepress/webpack',
   clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
-  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/vonor/' : '/',
   // alias: {
   //   '@vonor/ui': path.resolve(__dirname, '../../packages/vonor-ui/src')
   // },
@@ -33,29 +33,16 @@ export default {
     repo: 'https://github.com/louis61619/vonor',
     darkMode: false,
     // editLink: false,
-
     navbar: [
-      { text: '介紹', link: '/' },
+      { text: '指南', link: '/guilde/overview' },
       {
         text: '组件',
         link: '/components/form'
       }
     ],
-
     sidebar: {
-      '/': [
-        {
-          text: '介紹',
-          children: ['/README.md']
-        }
-      ],
-      '/components/': [
-        '/components/overview',
-        {
-          text: '組件',
-          children: ['/components/form', '/components/table']
-        }
-      ]
+      '/': ['/guilde/overview'],
+      '/components/': ['/components/form', '/components/table']
     }
   }
 }
