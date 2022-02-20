@@ -14,7 +14,8 @@
     "admin:dev": "pnpm run -C example serve",
     "admin:build": "pnpm run -C example build",
     "docs:dev": "pnpm run -C docs dev",
-    "docs:build": "pnpm run -C docs build"
+    "docs:build": "pnpm run -C docs build",
+    "preview": "pnpm admin:build && pnpm docs:build && mv ./example/dist/ ./docs/.vuepress/dist/example/"
   },
   "workspaces": [
     "packages/*",

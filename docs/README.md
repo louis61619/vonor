@@ -5,8 +5,9 @@ actions:
     link: /guide/overeview.html
     type: secondary
   - text: 範例
-    link: /example
+    link: /vonor/example
     type: primary
+    target: __blank
 
 features:
   - title: Monorepo

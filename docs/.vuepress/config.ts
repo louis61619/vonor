@@ -1,7 +1,8 @@
 import { path } from '@vuepress/utils'
+import { defineUserConfig } from 'vuepress'
 import { demoBlockPlugin } from '../plugin'
 
-export default {
+export default defineUserConfig({
   title: 'Vonor',
   description: `基於 Vue3 和 Element-plus 的後台構建方案`,
   bundler: '@vuepress/webpack',
@@ -11,7 +12,7 @@ export default {
   //   '@vonor/ui': path.resolve(__dirname, '../../packages/vonor-ui/src')
   // },
   plugins: [
-    [demoBlockPlugin],
+    [demoBlockPlugin as any],
     [
       '@vuepress/register-components',
       {
@@ -21,6 +22,7 @@ export default {
         }
       }
     ]
+    // [onInit]
   ],
   markdown: {
     code: {
@@ -45,4 +47,4 @@ export default {
       '/components/': ['/components/form', '/components/table']
     }
   }
-}
+})
