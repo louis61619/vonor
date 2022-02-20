@@ -106,7 +106,32 @@ export default defineComponent({
 
     const onCopy = () => {
       const code = decodeURIComponent(props.sourceCode)
-      // clipboardCopy(code)
+      const span = document.createElement('span')
+      span.textContent = code
+
+      // Preserve consecutive spaces and newlines
+      span.style.whiteSpace = 'pre'
+      span.style.webkitUserSelect = 'auto'
+      span.style.userSelect = 'all'
+
+      // Add the <span> to the page
+      document.body.appendChild(span)
+
+      // Make a selection object representing the range of text selected by the user
+      const selection = window.getSelection()
+      const range = window.document.createRange()
+      selection.removeAllRanges()
+      range.selectNode(span)
+      selection.addRange(range)
+
+      let success = false
+      try {
+        success = window.document.execCommand('copy')
+      } finally {
+        // Cleanup
+        selection.removeAllRanges()
+        window.document.body.removeChild(span)
+      }
     }
 
     return {

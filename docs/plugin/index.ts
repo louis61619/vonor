@@ -44,9 +44,12 @@ export const mdPlugin = (md: MarkdownIt) => {
 
         const current = sourceFile.replace('/', '-').replace('.vue', '')
         // const { html, js, css, cssPreProcessor, jsPreProcessor } = generateCodePenSnippet(source)
+
         return `<Demo source="${encodeURIComponent(
           code || ''
-        )}" path="${sourceFile}" description="${description}" current="${current}">`
+        )}" path="${sourceFile}" description="${description}" current="${current}" sourceCode="${encodeURIComponent(
+          source || ''
+        )}">`
         //   <template #highlight>
         //   <div v-pre class="language-vue">
         //     ${code}
