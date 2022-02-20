@@ -12,6 +12,7 @@
   "scripts": {
     "commit": "cz",
     "admin:dev": "pnpm run -C example serve",
+    "admin:build": "pnpm run -C example build",
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build"
   },

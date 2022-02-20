@@ -1,12 +1,5 @@
-const path = require('path')
+// const path = require('path')
 
 module.exports = {
-  publicPath: '',
-  configureWebpack: {
-    // resolve: {
-    //   alias: {
-    //     '@vonor/ui': path.resolve(__dirname, '../packages/vonor-ui/src')
-    //   }
-    // }
-  }
+  publicPath: process.env.NODE_ENV === 'production' ? '/example/' : '/'
 }

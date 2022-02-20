@@ -31,6 +31,12 @@ jobs:
       - name: build docs
         run: |
           pnpm docs:build
+      - name: build example
+        run: |
+          pnpm admin:build
+      - name: copy example to docs dist
+        run: |
+          cp ./example/dist ./.vuepress/dist/example
       - name: Commit files
         run: |
           cd $PUBLISH_DIR
