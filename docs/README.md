@@ -2,7 +2,7 @@
 home: true
 actions:
   - text: 文檔
-    link: /guide/overeview.html
+    link: /guilde/overview.html
     type: secondary
   - text: 範例
     link: /vonor/example
